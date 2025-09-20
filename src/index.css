@@ -6,6 +6,81 @@
 
 body{
   height: 100vh;
-  width: 100vh;
+  width: 100%;
 }
+.mainContainer{
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+
+}
+.Main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.container{
+  /* position:relative; */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  /* background-color: rgb(32, 26, 26); */
+  background: rgba(83, 79, 79, 0.3); 
+backdrop-filter: blur(3px);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.formContainer{
+  border-radius: 5px;
+  background-color: white;
+  height: 60vh;
+  width: 26vw;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 5px;
+
+}
+
+.formInputContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3px;
+  gap: 0.6rem;
+}
+.formContainer input{
+  width: 15vw;
+  font-size: 1.2rem;
+  padding: 2px 3px;
+  border-radius: 5px;
+}
+.formContainer label{
+  font-size: 1.3rem;
+}
+button{
+  width:8vw;
+  height: 4vh;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 2px;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(43, 43, 177);
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+
 
