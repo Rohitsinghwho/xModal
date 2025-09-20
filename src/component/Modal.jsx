@@ -35,27 +35,27 @@ const Modal = ({onClose}) => {
 
     }
   return (
-    <div className='container' onClick={onClose}>
-     <div className='formContainer' onClick={(e)=>e.stopPropagation()}>
+    <div className='modal' onClick={onClose}>
+     <div className='modal-content' onClick={(e)=>e.stopPropagation()}>
             <h2>Fill Details</h2>
             <form onSubmit={handleForm}>
                 <div className='formInputContainer'>
                   <label htmlFor="username">Username:</label>
-                  <input required type="text" name='username' value={username} onChange={e=>setUsername(e.target.value)}/>
+                  <input required id='username' type="text" name='username' value={username} onChange={e=>setUsername(e.target.value)}/>
                 </div>
                 <div className='formInputContainer'>
                   <label htmlFor="email">Email:</label>
-                  <input required type="email" name='email' value={email} onChange={e=>setEmail(e.target.value)}/>
+                  <input required id="email" type="email" name='email' value={email} onChange={e=>setEmail(e.target.value)}/>
                 </div>
                 <div className='formInputContainer'>
                   <label htmlFor="phone">Phone Number:</label>
-                  <input required type="number" name='phone' value={phone} onChange={e=>setPhone(e.target.value)}/>
+                  <input required id='phone' type="number" name='phone' value={phone} onChange={e=>setPhone(e.target.value)}/>
                 </div>
                 <div className='formInputContainer'>
                   <label htmlFor="dob">Date of Birth:</label>
-                  <input required type="date" name='daob' value={dateOfBirth} onChange={e=>setDateOfBirth(e.target.value)}/>
+                  <input required id='dob' type="date" name='daob' value={dateOfBirth} onChange={e=>setDateOfBirth(e.target.value)}/>
                 </div>
-                <button type='submit'>Submit</button>
+                <button type='submit' className='submit-button'>Submit</button>
             </form>
         </div>
         </div>
